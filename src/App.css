@@ -1,0 +1,14 @@
+/* body {
+    margin: 0;
+    color: white;
+    background-color: rgb(26,32,44);
+} */
+
+.main-container {
+    padding: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }

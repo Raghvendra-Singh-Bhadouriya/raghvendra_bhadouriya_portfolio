@@ -1,0 +1,32 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+/* Reset and global styles */
+* {
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Root font and color */
+:root {
+  font-family: "Raleway", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  margin: 0;
+  color: white;
+  background-color: rgb(26, 32, 44);
+  background-image: linear-gradient(to left, rgb(27, 20, 41), rgb(20, 15, 35));
+  font-family: "Raleway", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for WebKit browsers */
+body::-webkit-scrollbar {
+  display: none;
+}
+
