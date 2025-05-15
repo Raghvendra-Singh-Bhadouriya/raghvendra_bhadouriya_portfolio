@@ -3,8 +3,8 @@ import { BiX } from "react-icons/bi";
 
 import { HashLink } from 'react-router-hash-link';
 
-import { Link as RouterLink } from "react-router-dom"
-import { Link as ChakraLink } from "@chakra-ui/react"
+// import { Link as RouterLink } from "react-router-dom"
+// import { Link as ChakraLink } from "@chakra-ui/react"
 
 const Sidebar = ({isOpen, onClose}) => {
 

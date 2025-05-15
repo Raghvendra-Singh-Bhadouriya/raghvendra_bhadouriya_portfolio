@@ -1,21 +1,30 @@
 import { Box, Card, CardBody, CardHeader, CardFooter, Grid, GridItem, Image, Heading, Stack, Text, Button, Flex } from "@chakra-ui/react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
 
 const Project = () =>  {
 
     const [ projectData, setProjectData ] = useState([])
+    const [ loading, setLoading ] = useState(false)
+    const [ error, setError ] = useState(false)
 
     async function fetchProjects(){
+        setLoading(true)
         try {
             const res = await axios({
                 method: "get",
-                url: `http://localhost:8080/projects`
+                url: `https://raghvendra-bhadouriya-portfolio-bc-api.onrender.com/projects`
             })
             console.log(res.data.projects)
             setProjectData(res.data.projects)
+            setLoading(false)
+            setError(false)
         } catch (error) {
-            
+            console.log("Erron in fetching projects", error.message)
+            setError(true)
+            setLoading(false)
         }
     }
 
@@ -24,6 +33,22 @@ const Project = () =>  {
         fetchProjects()
     }, [])
 
+
+    if(loading){
+        return (
+            <>
+            <Loading/>
+            </>
+        )
+    }
+
+    if(error){
+        return (
+            <>
+            <Error/>
+            </>
+        )
+    }
 
     return(
         <>
@@ -57,10 +82,10 @@ const Project = () =>  {
                                 </Button>
                             {/* </Flex> */}
                         </CardFooter>
-      </Card>
-    </GridItem>
-  ))}
-</Grid>
+                    </Card>
+                </GridItem>
+            ))}
+            </Grid>
 
         </Box>
         </>

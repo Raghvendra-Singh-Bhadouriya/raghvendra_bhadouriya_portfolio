@@ -1,49 +1,68 @@
 import { Box, Flex, Card, CardBody, Grid, GridItem, Text, Image, CardHeader, Heading, Stack } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import axios from "axios"
+import Loading from "../components/Loading";
+import Error from "../components/Error";
 
 const Skill = () =>  {
     const [ languages, setLanguages ] = useState([])
     const [ technologies, setTechnologies ] = useState([])
     const [ tools, setTools ] = useState([])
+    const [ loading, setLoading ] = useState(false)
+    const [ error, setError ] = useState(false)
 
 
     async function fetchLanguages(){
+        setLoading(true)
         try {
             let res = await axios({
                 method: "get",
-                url: `http://localhost:8080/skill/language`
+                url: `https://raghvendra-bhadouriya-portfolio-bc-api.onrender.com/skill/language`
             })
             console.log(res.data.data)
             setLanguages(res.data.data)
+            setLoading(false)
+            setError(false)
         } catch (error) {
             console.log("error in fetching Languages", error.message)
+            setError(true)
+            setLoading(false)
         }
     }
 
     async function fetchTechnologies(){
+        setLoading(true)
         try {
             let res = await axios({
                 method: "get",
-                url: `http://localhost:8080/skill/technology`
+                url: `https://raghvendra-bhadouriya-portfolio-bc-api.onrender.com/skill/technology`
             })
             console.log(res.data.data)
             setTechnologies(res.data.data)
+            setLoading(false)
+            setError(false)
         } catch (error) {
             console.log("error in fetching Technologies", error.message)
+            setError(true)
+            setLoading(false)
         }
     }
 
     async function fetchTools(){
+        setLoading(true)
         try {
             let res = await axios({
                 method: "get",
-                url: `http://localhost:8080/skill/tools`
+                url: `https://raghvendra-bhadouriya-portfolio-bc-api.onrender.com/skill/tools`
             })
             console.log(res.data.data)
             setTools(res.data.data)
+            setLoading(false)
+            setError(false)
         } catch (error) {
             console.log("error in fetching Tools", error.message)
+            setError(true)
+            setLoading(false)
         }
     }
 
@@ -52,6 +71,23 @@ const Skill = () =>  {
         fetchTechnologies();
         fetchTools();
     }, [])
+
+    if(loading){
+        return (
+            <>
+            <Loading/>
+            </>
+        )
+    }
+    
+    if(error){
+        console.log("error message in error of skill")
+        return (
+            <>
+            <Error/>
+            </>
+        )
+    }
 
     return(
         <>
