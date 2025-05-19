@@ -11,7 +11,7 @@ import { Box, Heading } from "@chakra-ui/react";
                 {/* <Heading mt={"5%"} textAlign="center" mb={4}>My Resume</Heading> */}
                 <Box height="90vh">
                   <iframe
-                    src="/RaghvendraSinghBhadouriya_Resume.pdf"
+                    src="/RaghvendraSinghBhadouriya-GeneralProfessional-CVie.pdf"
                     width="100%"
                     height="100%"
                     style={{ border: 'none' }}
