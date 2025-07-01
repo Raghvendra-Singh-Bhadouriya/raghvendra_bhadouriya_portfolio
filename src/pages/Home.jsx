@@ -93,7 +93,7 @@ const Home = () =>  {
                         // mt={"4%"}
                         fontWeight={"semibold"}
                         lineHeight={1}
-                        // fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
+                        fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
                         >
                             I fell in love with web development, and each day I strive to learn and grow in this field.
                         </Text>
@@ -101,7 +101,7 @@ const Home = () =>  {
                         // mt={"4%"} 
                         fontWeight={"semibold"} 
                         lineHeight={1}
-                        // fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
+                        fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
                         >
                             Though I'm just starting my professional journey, I’ve spent countless hours building projects, solving real-world problems, and sharpening my skills.
                         </Text>
@@ -109,7 +109,7 @@ const Home = () =>  {
                         // mt={"4%"}
                         fontWeight={"semibold"}
                         lineHeight={1}
-                        // fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
+                        fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
                         >
                             I'm comfortable working with core web technologies like HTML, CSS, JavaScript, and I have hands-on experience with React.js, Node.js, Express, and MongoDB — the full MERN stack.
                         </Text>
@@ -117,7 +117,7 @@ const Home = () =>  {
                         // mt={"4%"}
                         fontWeight={"semibold"}
                         lineHeight={1}
-                        // fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
+                        fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
                         >
                             My main interest lies in building responsive, user-friendly web applications and exploring the potential of modern frameworks and tools.
                         </Text>
@@ -125,7 +125,7 @@ const Home = () =>  {
                         // mt={"4%"}
                         fontWeight={"semibold"}
                         lineHeight={1}
-                        // fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
+                        fontSize={{ base: "sm", sm: "12px", md: "15px", lg: "16px", xl: "18px" }}
                         >
                             Whenever I can, I put my passion into practice by creating projects that are both functional and meaningful.
                         </Text>

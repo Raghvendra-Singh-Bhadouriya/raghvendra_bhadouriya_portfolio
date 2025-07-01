@@ -16,7 +16,7 @@ const Loading = () => {
         border={"0px solid black"}
         >
             <Spinner color="colorPalette.600" />
-            <Text color="colorPalette.600">Loading...</Text>
+            <Text color="colorPalette.600">Please wait data is fetching...</Text>
         </VStack>
         </>
     )
