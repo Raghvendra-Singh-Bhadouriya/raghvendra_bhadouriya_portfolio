@@ -28,7 +28,7 @@ const Error = () => {
         <Box>
           <AlertTitle>Oops!</AlertTitle>
           <AlertDescription>
-            Something went wrong. Please try again.
+            Something went wrong. Please refresh.
           </AlertDescription>
         </Box>
         </Alert>

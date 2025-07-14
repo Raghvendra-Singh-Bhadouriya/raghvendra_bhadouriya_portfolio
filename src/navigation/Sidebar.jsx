@@ -18,12 +18,12 @@ const Sidebar = ({isOpen, onClose}) => {
             right={0}
             border={"1px solid yellow"}
             position={"absolute"}
-            bg="rgba(15, 14, 58, 0.4)"
-            backdropFilter="blur(20px)"
+            bg="rgba(19, 25, 36, 1)"
+            //backdropFilter="blur(80px)"
             boxShadow="rgba(243, 15, 15, 0.4) 0px 5px 15px"
             borderLeft="0px solid yellow"
             p={6}
-            onClick={onClose}
+            //onClick={onClose}
         >
           
           <Box
@@ -54,7 +54,9 @@ const Sidebar = ({isOpen, onClose}) => {
                 fontSize="lg"
                 fontWeight="medium"
                 color="white"
+                style={{width:"100%"}}
                 _hover={{ textDecoration: "underline", color: "yellow.300" }}
+                onClick={onClose}
               >
                 {item.label}
               </HashLink>

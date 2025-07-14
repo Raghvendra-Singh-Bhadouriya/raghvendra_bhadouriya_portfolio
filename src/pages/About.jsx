@@ -8,7 +8,7 @@ const About = () =>  {
 
     return(
         <>
-        <Box  bgColor={"rgb(26,32,44)"} pt={"2%"} pb={"10%"} border={"0px solid yellow"} h={{base:"auto", sm:"100vh", md:"100vh", lg:"auto", xl:"auto"}}>
+        <Box  bgColor={"rgb(26,32,44)"} pt={"2%"} pb={"10%"} border={"0px solid yellow"} h={{base:"auto", sm:"auto", md:"100vh", lg:"auto", xl:"auto"}}>
             <Flex border={"0px solid yellow"} w={"100%"} p={"5%"} 
             direction={{base:"column", sm:"column", md:"column", lg:"row", xl:"row"}}
             >

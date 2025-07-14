@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Image } from "@chakra-ui/react";
 const Github = () =>  {
     return(
         <>
-        <Box h={{base:"100vh", sm:"100vh", md:"100vh", lg:"auto", xl:"auto"}} pt={"8%"} pb={"5%"} border={"0px solid yellow"} bgColor={"rgb(26,32,44)"}>
+        <Box h={{base:"100vh", sm:"100vh", md:"100vh", lg:"auto", xl:"100vh"}} pt={"8%"} pb={"5%"} border={"0px solid yellow"} bgColor={"rgb(26,32,44)"}>
             <Heading fontSize={{base:"sm", sm:"sm", md:"x-large", xl:"x-large"}} textAlign={"center"}>
                 GitHub_<span style={{color:"red"}}>Insights</span>
             </Heading>
@@ -16,9 +16,9 @@ const Github = () =>  {
                         <Image w={"100%"} src="https://github-readme-stats.vercel.app/api?username=Raghvendra-Singh-Bhadouriya&show_icons=true&theme=vision-friendly-dark"/>
                     </Box>
                 </Flex>
-                <Box w={"100%"} mt={"2%"} border={"0px solid yellow"}>
+                {/* <Box w={"100%"} mt={"2%"} border={"0px solid yellow"}>
                     <Image m={"auto"} src="https://streak-stats.demolab.com/?user=Raghvendra-Singh-Bhadouriya&theme=vision-friendly-dark&date_format=j%20M%5B%20Y%5D"/>
-                </Box>
+                </Box> */}
                 <Box mt={"2%"}>
                     <Image src="https://github-profile-trophy.vercel.app/?username=Raghvendra-Singh-Bhadouriya&theme=darkhub"/>
                 </Box>
