@@ -29,17 +29,15 @@ const Navbar = () => {
             <Flex border={"0px solid red"} w={"90%"} m={"auto"} justifyContent={"space-between"}>
                 <Flex as={RouterLink} to="/" border={"0px solid yellow"} >
                     <Text 
-                    as={RouterLink} to="/"
                     color= "red"
                     fontWeight={"bold"}
                     fontSize={{ base: "10px", sm: "15px", md: "20px", lg: "25px", xl: "25px" }}
-                    >{`Raghvendra`}</Text>
+                    >Raghvendra</Text>
                     <Text
-                    as={RouterLink} to="/"
                     color= "white"
                     fontWeight={"bold"}
                     fontSize={{ base: "10px", sm: "15px", md: "20px", lg: "25px", xl: "25px" }}
-                    >{`Bhadouriya`}</Text>
+                    >Bhadouriya</Text>
                 </Flex>
 
                 <Flex 

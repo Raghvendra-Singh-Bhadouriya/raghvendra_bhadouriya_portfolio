@@ -17,7 +17,7 @@ const Project = () =>  {
                 method: "get",
                 url: `https://raghvendra-bhadouriya-portfolio-bc-api.onrender.com/projects`
             })
-            console.log(res.data)
+            console.log("Projects fetched successfully", res.data.projects)
             setProjectData(res.data.projects)
             setLoading(false)
             setError(false)

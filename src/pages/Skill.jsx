@@ -19,7 +19,7 @@ const Skill = () =>  {
                 method: "get",
                 url: `https://raghvendra-bhadouriya-portfolio-bc-api.onrender.com/skill/language`
             })
-            console.log(res.data.data)
+            console.log("Language fetched successfully", res.data.data)
             setLanguages(res.data.data)
             setLoading(false)
             setError(false)
@@ -37,7 +37,7 @@ const Skill = () =>  {
                 method: "get",
                 url: `https://raghvendra-bhadouriya-portfolio-bc-api.onrender.com/skill/technology`
             })
-            console.log(res.data.data)
+            console.log("Technologies fetched successfully", res.data.data)
             setTechnologies(res.data.data)
             setLoading(false)
             setError(false)
@@ -55,7 +55,7 @@ const Skill = () =>  {
                 method: "get",
                 url: `https://raghvendra-bhadouriya-portfolio-bc-api.onrender.com/skill/tools`
             })
-            console.log(res.data.data)
+            console.log("Tools fetched successfully", res.data.data)
             setTools(res.data.data)
             setLoading(false)
             setError(false)
